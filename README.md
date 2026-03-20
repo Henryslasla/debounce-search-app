@@ -1,17 +1,110 @@
-# React + Vite
+# React Debounced Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that implements a debounced search using a custom hook and integrates with an external API.
 
-Currently, two official plugins are available:
+This project demonstrates core frontend concepts like debouncing user input, API integration, handling asynchronous operations, and managing race conditions using AbortController.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Debounced search input (500ms delay)
+- API integration (GitHub Users API)
+- Custom React hook (`useDebounce`)
+- Loading state handling
+- No results state handling
+- Request cancellation using AbortController (prevents race conditions)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# debounce-search-app" 
+## 🛠️ Tech Stack
+
+- React (Hooks)
+- JavaScript (ES6+)
+- Fetch API
+- Vite
+
+---
+
+## 🧠 Key Concepts Covered
+
+- Debouncing user input to optimize performance
+- Custom hooks for reusable logic
+- Handling async API calls with `async/await`
+- Preventing race conditions using `AbortController`
+- Conditional rendering in React
+
+---
+
+## 📸 How It Works
+
+1. User types in the search box  
+2. Input is debounced using a custom hook  
+3. API call is triggered only after user stops typing  
+4. Previous API requests are cancelled if a new search starts  
+5. Results are displayed dynamically  
+
+---
+
+## ▶️ How to Run Locally
+
+```bash
+npm install
+npm run dev
+
+# React Debounced Search App
+
+A React application that implements a debounced search using a custom hook and integrates with an external API.
+
+This project demonstrates core frontend concepts like debouncing user input, API integration, handling asynchronous operations, and managing race conditions using AbortController.
+
+---
+
+## 🚀 Features
+
+- Debounced search input (500ms delay)
+- API integration (GitHub Users API)
+- Custom React hook (`useDebounce`)
+- Loading state handling
+- No results state handling
+- Request cancellation using AbortController (prevents race conditions)
+
+---
+
+## 🛠️ Tech Stack
+
+- React (Hooks)
+- JavaScript (ES6+)
+- Fetch API
+- Vite
+
+---
+
+## 🧠 Key Concepts Covered
+
+- Debouncing user input to optimize performance
+- Custom hooks for reusable logic
+- Handling async API calls with `async/await`
+- Preventing race conditions using `AbortController`
+- Conditional rendering in React
+
+---
+
+## 📸 How It Works
+
+1. User types in the search box  
+2. Input is debounced using a custom hook  
+3. API call is triggered only after user stops typing  
+4. Previous API requests are cancelled if a new search starts  
+5. Results are displayed dynamically  
+
+---
+
+## ▶️ How to Run Locally
+
+```bash
+npm install
+npm run dev
+
+Live Demo
+https://debounce-search-app.vercel.app/
